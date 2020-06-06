@@ -1,0 +1,21 @@
+Group hierarchy,Region,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+Increased Cost Estimate,US East (N. Virginia),Amazon EC2,0,2888.16,34657.92,USD,"Operating system (Linux), Quantity (16), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (1 TB), Instance type (c5.xlarge)"
+Increased Cost Estimate,US East (N. Virginia),S3 Standard,0,1038.69,12464.28,USD,S3 Standard storage (20 TB per month)
+Increased Cost Estimate,US East (N. Virginia),Elastic Load Balancing,0,1084.05,13008.60,USD,Number of Application Load Balancers (2)
+Increased Cost Estimate,US East (N. Virginia),Amazon Virtual Private Cloud (VPC),0,987.3,11847.60,USD,Number of NAT Gateways (2)
+Increased Cost Estimate,US East (N. Virginia),Amazon Route 53,0,405,4860.00,USD,Hosted Zones (10)
+Increased Cost Estimate,US East (N. Virginia),Amazon RDS for MySQL,0,3029.544,36354.53,USD,"Quantity (2), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Instance type (db.m5.4xlarge)"
+Increased Cost Estimate,US West (Oregon),Amazon EC2,0,2888.16,34657.92,USD,"Operating system (Linux), Quantity (16), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (1 TB), Instance type (c5.xlarge)"
+Increased Cost Estimate,US West (Oregon),Amazon RDS for MySQL,0,3029.544,36354.53,USD,"Quantity (2), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Instance type (db.m5.4xlarge)"
+Increased Cost Estimate,US West (Oregon),S3 Standard,0,1038.69,12464.28,USD,S3 Standard storage (20 TB per month)
+Increased Cost Estimate,US West (Oregon),Amazon Virtual Private Cloud (VPC),0,987.3,11847.60,USD,Number of NAT Gateways (2)
+Increased Cost Estimate,US West (Oregon),Elastic Load Balancing,0,1084.05,13008.60,USD,Number of Application Load Balancers (2)
+
+Monthly Cost: 18460.49
+https://calculator.aws/#/estimate?id=0338cab081f024e18b63ab6ee3dd2447e70690ab
+
+Rationale:
+With the additional budget, adding the following to improve redundancy and performance:
+- Enabled Multi-AZ deployment for the Amazon RDS for MySQL to provide near zero RTO/RPO issues when failing over from one AZ to another.
+- Setup Multi-site deployment in another region to provide the best RTO/RPO in the event of a region wide failure in the primary region.
+- Multi-site deployment also allows traffic to be load balanced across the two regions providing increased capacity for handling any additional traffic load, as well as improved performance by using Route53 latency based routing and ensuring customers traffic are routed to the closest region.

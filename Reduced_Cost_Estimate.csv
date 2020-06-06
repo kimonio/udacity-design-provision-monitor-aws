@@ -1,0 +1,17 @@
+Group hierarchy,Region,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+Reduced Cost Estimate,US East (N. Virginia),Amazon EC2,0,1444.08,17328.96,USD,"Operating system (Linux), Quantity (8), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (1 TB), Instance type (c5.xlarge)"
+Reduced Cost Estimate,US East (N. Virginia),S3 Standard,0,1038.69,12464.28,USD,S3 Standard storage (20 TB per month)
+Reduced Cost Estimate,US East (N. Virginia),Amazon RDS for MySQL,0,1514.772,18177.26,USD,"Quantity (2), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Instance type (db.m5.4xlarge)"
+Reduced Cost Estimate,US East (N. Virginia),Elastic Load Balancing,0,1084.05,13008.60,USD,Number of Application Load Balancers (2)
+Reduced Cost Estimate,US East (N. Virginia),Amazon Virtual Private Cloud (VPC),0,987.3,11847.60,USD,Number of NAT Gateways (2)
+Reduced Cost Estimate,US East (N. Virginia),Amazon Route 53,0,402.5,4830.00,USD,Hosted Zones (5)
+
+Monthly Cost: 6471.392
+https://calculator.aws/#/estimate?id=dd8996409841533fd230a44a93d139ea2966e6c0
+
+Rationale:
+Reduced the cost below $6500 per month by doing the following:
+- Enabled standard reserved instances for 1 year for Amazon RDS for MySQL, resulting in cost savings over using on-demand instances.
+- Enabled standard reserved instances for 1 year for Amazon EC2, resulting in cost savings over using on-demand instances.
+- Reduced the total number of EC2 instances from 16 to 8 which sets up 2 webservers in each availability zone as well as 2 application servers in each availability zone.
+- With autoscaling enabled for both the web and application tiers, additional EC2 instances can be spun up to deal with any increased load that may exceed the existing setup.
