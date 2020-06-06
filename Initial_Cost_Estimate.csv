@@ -5,6 +5,7 @@ Initial Cost Estimate,US East (N. Virginia),Amazon RDS for MySQL,0,2232.8,26793.
 Initial Cost Estimate,US East (N. Virginia),Elastic Load Balancing,0,1084.05,13008.60,USD,Number of Application Load Balancers (2)
 Initial Cost Estimate,US East (N. Virginia),Amazon Virtual Private Cloud (VPC),0,987.3,11847.60,USD,Number of NAT Gateways (2)
 Initial Cost Estimate,US East (N. Virginia),Amazon Route 53,0,402.5,4830.00,USD,Hosted Zones (5)
+Initial Cost Estimate,US East (N. Virginia),Amazon Elastic IP,0,0,0.00,USD,"Number of EC2 instances (5), Number of EIPs per instance (1)"
 
 Monthly Cost: 9369.34
-https://calculator.aws/#/estimate?id=7e78eebe4feb9472e66d75f733869aad6e36836f
+https://calculator.aws/#/estimate?id=e3a9f3706f0b37452a0cecae010e91b905cc7ead

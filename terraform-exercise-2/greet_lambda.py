@@ -1,4 +1,6 @@
 import os
 
 def lambda_handler(event, context):
-    return "{} from Lambda!".format(os.environ['greeting'])
+    message = "{} from Lambda!".format(os.environ['greeting'])
+    print(message) 
+    return message

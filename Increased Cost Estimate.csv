@@ -5,14 +5,16 @@ Increased Cost Estimate,US East (N. Virginia),Elastic Load Balancing,0,1084.05,1
 Increased Cost Estimate,US East (N. Virginia),Amazon Virtual Private Cloud (VPC),0,987.3,11847.60,USD,Number of NAT Gateways (2)
 Increased Cost Estimate,US East (N. Virginia),Amazon Route 53,0,405,4860.00,USD,Hosted Zones (10)
 Increased Cost Estimate,US East (N. Virginia),Amazon RDS for MySQL,0,3029.544,36354.53,USD,"Quantity (2), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Instance type (db.m5.4xlarge)"
+Increased Cost Estimate,US East (N. Virginia),Amazon Elastic IP,0,0,0.00,USD,"Number of EC2 instances (5), Number of EIPs per instance (1)"
 Increased Cost Estimate,US West (Oregon),Amazon EC2,0,2888.16,34657.92,USD,"Operating system (Linux), Quantity (16), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (1 TB), Instance type (c5.xlarge)"
 Increased Cost Estimate,US West (Oregon),Amazon RDS for MySQL,0,3029.544,36354.53,USD,"Quantity (2), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Instance type (db.m5.4xlarge)"
 Increased Cost Estimate,US West (Oregon),S3 Standard,0,1038.69,12464.28,USD,S3 Standard storage (20 TB per month)
 Increased Cost Estimate,US West (Oregon),Amazon Virtual Private Cloud (VPC),0,987.3,11847.60,USD,Number of NAT Gateways (2)
 Increased Cost Estimate,US West (Oregon),Elastic Load Balancing,0,1084.05,13008.60,USD,Number of Application Load Balancers (2)
+Increased Cost Estimate,US West (Oregon),Amazon Elastic IP,0,0,0.00,USD,"Number of EC2 instances (5), Number of EIPs per instance (1)"
 
 Monthly Cost: 18460.49
-https://calculator.aws/#/estimate?id=0338cab081f024e18b63ab6ee3dd2447e70690ab
+https://calculator.aws/#/estimate?id=aff05608904eea5e88df95cafc2f42c786f84b0a
 
 Rationale:
 With the additional budget, adding the following to improve redundancy and performance:
